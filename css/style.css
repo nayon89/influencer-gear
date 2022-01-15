@@ -1,0 +1,407 @@
+/* =========================fonts======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+/* ========================================================
+                    header-part-start
+======================================================== */
+header .logo h2{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/* ========================================================
+                    header-part-end
+======================================================== */
+/* ========================================================
+                    banner-part-start
+========================================================= */
+#banner-part{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 80px; 
+    justify-content: center;
+    margin-top: 50px;
+} 
+#banner-part .text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center;
+     
+} 
+#banner-part .text h1{ 
+    color: #3A3A3A; 
+    font-size: 50px;
+    font-weight: 700; 
+}
+
+#banner-part .text p{
+    font-size: 16px;
+    font-weight:700;
+    margin-bottom: 30px;
+    
+}
+#banner-part .text a{
+    font-size: 15px; 
+    font-weight: 700;
+    background-color: #CA306D;
+    padding: 15px 20px; 
+    border-radius: 30px;
+    color: #ffffff; 
+    transition: .4s;
+}
+#banner-part .text a:hover{
+    background-color: #ffffff;
+    border: 1px solid #CA306D;
+    color: #CA306D;
+    outline: 0;
+}
+#banner-part .image{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    height: 500px;
+    cursor: pointer;    
+}
+#banner-part .image img{
+    width: 90%;
+}
+#banner-part .image:hover img{
+    transform:scale(1.3);
+    transition: .6s;
+}
+
+/* ========================================================
+                    banner-part-end
+======================================================== */
+/* ========================================================
+                    collection-part-start
+======================================================== */
+#collection-part .collect-title{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#collection-part .collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+#collection-part .collections .collect{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 0px 3px 15px 5px #525151; 
+    box-shadow: 0px 3px 15px 5px #747474;
+   
+}
+#collection-part .collections .collect .details h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+#collection-part .collections .collect .details h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+#collection-part .collections .collect .details h4, h5, h6{
+    font-size: 12px;
+    font-weight: 700;
+    color: #787885;
+}
+#collection-part .collections .collect .details .fa-star,.fa-star-half-alt{
+    font-size: 12px;
+    color: #FB8200;
+}
+#collection-part .collections .collect .details .rating{
+    font-size: 12px;
+    color: #000000;
+}
+#collection-part .collections .collect .image{
+    
+    margin: 20px auto;
+}
+#collection-part .collections .collect .image img{
+    width: 325px;
+    height: 256px;
+}
+#collection-part .collections .collect .details{
+    padding: 0px 25px 25px 25px;
+}
+#collection-part .see{
+    text-align: right;
+    color: #E02C6D;
+    margin: 20px 0;
+}
+#collection-part .see a{
+    font-weight: 700;
+    color: #E02C6D;
+}
+
+/* ========================================================
+                    collection-part-end
+======================================================== */
+/* =======================================================
+                    payment part start
+==========================================================*/
+#payment-part {
+    background: url(../images/background.gif) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+#payment-part .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#payment-part .title p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#payment-part .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#payment-part .info h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffa913;
+    margin-bottom: 30px;
+}
+
+#payment-part input {
+    font-size: 20px;
+    color: #999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#payment-part .fname {
+    width: 48%;
+}
+
+#payment-part .lname {
+    width: 48%;
+    margin-left: 24px;
+}
+
+#payment-part .email {
+    width: 99%;
+}
+
+#payment-part .number {
+    width: 99%;
+}
+
+#payment-part .select {
+    width: 99%;
+    font-size: 20px;
+    color: #999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+#payment-part .method {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#payment-part .method p {
+    font-size: 24px;
+    color: #ffffff;
+}
+#payment-part .checkbox span {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+#payment-part .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#payment-part button {
+    padding: 15px 20px;
+    background-color: #CA306D;
+    border: 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 30px;
+    margin: 37px 0;
+    cursor: pointer;
+}
+/* ========================================================
+                    payment part end
+===========================================================*/
+/* ========================================================
+                    footer part start
+========================================================= */
+footer{
+    background: #0A0826;
+    text-align: center;
+    padding: 30px 0; 
+}
+footer .footer-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+footer .footer-title h3,h4{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+#footer-part .icon {
+    margin: 25px 0;
+}
+#footer-part .icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    line-height: 40px;
+    text-align: center;
+    color: #353535;
+    font-size: 24px;
+    margin: 5px;
+    transition: .2s;
+}
+#footer-part .icon a:hover i {
+    background: #CA306D;
+    color: #fff;
+    transform: rotate(360deg);
+}
+/* ===============================================================
+                    footer part end
+=============================================================== */
+
+/* ===============================================================
+                    media query start
+================================================================ */
+
+
+/* ==================(mobile view start)================== */
+/*-------------------banner-part-------------------- */
+@media (max-width:689px) {
+    header .logo{
+        text-align: center;
+    }
+    #banner-part {
+	display: grid;
+	grid-template-columns:1fr;
+	gap: 20px;
+	justify-content: center;
+    margin-top: 10px;
+}
+#banner-part .text{
+    order: 2;
+    width: 86%;
+    margin: 0 auto;
+}
+    #banner-part .text {
+	margin-bottom: 30px;
+    text-align: center;
+}
+#banner-part .image {
+	background-position-x: center;
+    text-align: center;
+    margin-top: 50px;
+}
+#banner-part .image img {
+    width: 70%;
+}
+/* ---------------collection-part--------------- */
+#collection-part .collections {
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+}
+#collection-part .see {
+    width: 77%;
+}
+/* ---------------payment-part--------------- */
+#payment-part {
+    padding: 40px 20px;
+}
+#payment-part .lname {
+    margin-left: 13px;
+}
+}
+/* ==================(mobile view end)================== */
+
+/* ==================(tablet view)================== */
+/* ---------------------banner-part------------------ */
+@media (min-width:689px) and (max-width:922px) {
+    header .logo{
+        text-align: center;
+    }
+    #banner-part {
+      display: grid;
+      grid-template-columns:1fr;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  #banner-part .text{
+      order: 2;
+      width: 86%;
+    margin: 0 auto;
+  }
+      #banner-part .text {
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  #banner-part .image {
+      background-position-x: center;
+      text-align: center;
+      margin-top: 50px;
+  }
+  #banner-part .image img {
+    width: 52%;
+}
+/* -----------------collect-part---------------- */
+#collection-part .collections{
+    grid-template-columns: repeat(2, 1fr);
+    width: 88%;
+}
+#collection-part .see {
+    width: 48%;
+}
+/* -----------------payment-part---------------- */
+#payment-part {
+    padding: 40px 20px;
+}
+  }
+  /* ==================Banner-part end (tablet view)================== */
